@@ -74,6 +74,12 @@ footer {
   color: var(--color-wheatfield-100);
 }
 
+.dashed-logo {
+  border-style: dashed;
+  border-color: var(--color-venetian-red-900);
+  border-width: 2px;
+  border-radius: 50%;
+}
 
 .text-primary-red-900 {
   color: var(--color-venetian-red-900);
