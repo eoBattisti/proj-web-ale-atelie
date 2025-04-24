@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #333333;
+  --color-primary: #333333;
+  --coloar-atelier-50: #f8f8f8;
+  --coloar-atelier-100: #f0f0f0;
+  --coloar-atelier-200: #e4e4e4;
+  --coloar-atelier-300: #d1d1d1;
+  --coloar-atelier-400: #b4b4b4;
+  --coloar-atelier-500: #9a9a9a;
+  --coloar-atelier-600: #818181;
+  --coloar-atelier-700: #6a6a6a;
+  --coloar-atelier-800: #5a5a5a;
+  --coloar-atelier-900: #4a4a4a;
+  --coloar-atelier-950: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.delay-100 {
+  animation-delay: 0.1s;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+
+/* Aspect ratio utilities */
+/*.aspect-w-4 {*/
+/*position: relative;*/
+/*padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);*/
+/*}*/
+/**/
+/*.aspect-w-4 > * {*/
+/*position: absolute;*/
+/*height: 100%;*/
+/*width: 100%;*/
+/*top: 0;*/
+/*right: 0;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*}*/
+/**/
+/*.aspect-w-4 {*/
+/*--tw-aspect-w: 4;*/
+/*}*/
+/**/
+/*.aspect-h-3 {*/
+/*--tw-aspect-h: 3;*/
+/*}*/
