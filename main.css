@@ -81,6 +81,10 @@ footer {
   border-radius: 50%;
 }
 
+.dashed-border-wrapper {
+  border: 1px dashed var(--color-venetian-red-900);
+}
+
 .text-primary-red-900 {
   color: var(--color-venetian-red-900);
 }
