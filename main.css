@@ -85,6 +85,10 @@ footer {
   border: 1px dashed var(--color-venetian-red-900);
 }
 
+.solid-border-wrapper {
+  border: 1px solid var(--color-venetian-red-900);
+}
+
 .text-primary-red-900 {
   color: var(--color-venetian-red-900);
 }
@@ -114,12 +118,53 @@ footer {
   color: var(--color-wheatfield-50);
 }
 
+.background-primary-red-50 {
+  background-color: var(--color-venetian-red-50);
+}
+
+.background-primary-red-100 {
+  background-color: var(--color-venetian-red-100);
+}
+
+.background-primary-red-200 {
+  background-color: var(--color-venetian-red-200);
+}
+
+.background-primary-red-300 {
+  background-color: var(--color-venetian-red-300);
+}
+
+.background-primary-red-400 {
+  background-color: var(--color-venetian-red-400);
+}
+
+.background-primary-red-500 {
+  background-color: var(--color-venetian-red-500);
+}
+
+.background-primary-red-600 {
+  background-color: var(--color-venetian-red-600);
+}
+
+.background-primary-red-700 {
+  background-color: var(--color-venetian-red-700);
+}
+
+.background-primary-red-800 {
+  background-color: var(--color-venetian-red-800);
+}
+
 .background-primary-red-900 {
   background-color: var(--color-venetian-red-900);
 }
 
 .background-primary-red-950 {
   background-color: var(--color-venetian-red-950);
+}
+
+.services-section {
+  background: var(--color-venetian-red-200) url("./assets/foo.png") top center no-repeat;
+  background-size: cover;
 }
 
 
