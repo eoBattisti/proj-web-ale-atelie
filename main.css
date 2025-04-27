@@ -2,8 +2,8 @@
 
 :root {
   --color-background: #ffffff;
-  --color-foreground: #333333;
-  --color-primary: #333333;
+  --color-foreground: #282829;
+  --color-primary: #282829;
   --color-venetian-red-50: #ffeff1;
   --color-venetian-red-100: #ffdbe0;
   --color-venetian-red-200: #ffbdc5;
@@ -52,6 +52,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif !important;
 }
 
 footer {
@@ -81,12 +82,20 @@ footer {
   border-radius: 50%;
 }
 
+.text-primary-black {
+  color: var(--color-primary);
+}
+
 .dashed-border-wrapper {
   border: 1px dashed var(--color-venetian-red-900);
 }
 
 .solid-border-wrapper {
   border: 1px solid var(--color-venetian-red-900);
+}
+
+.text-primary-red-700 {
+  color: var(--color-venetian-red-700);
 }
 
 .text-primary-red-900 {
@@ -162,9 +171,43 @@ footer {
   background-color: var(--color-venetian-red-950);
 }
 
+.backgound-primary-wheat-50 {
+  background-color: var(--color-wheatfield-50);
+}
+
+.backgound-primary-wheat-100 {
+  background-color: var(--color-wheatfield-100);
+}
+
+.backgound-primary-wheat-200 {
+  background-color: var(--color-wheatfield-200);
+}
+
+.backgound-primary-wheat-300 {
+  background-color: var(--color-wheatfield-300);
+}
+
+
 .services-section {
-  background: var(--color-venetian-red-200) url("./assets/foo.png") top center no-repeat;
+  background: var(--color-venetian-red-300) url("./assets/foo.png") top center no-repeat;
   background-size: cover;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 64px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+
+.swiper-pagination-bullet {
+  background: #4F46E5;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4F46E5 !important;
 }
 
 

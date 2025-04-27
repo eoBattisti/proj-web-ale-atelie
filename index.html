@@ -26,37 +26,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
     rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwindConfig = {
-      theme: {
-        extend: {
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            serif: ['Playfair Display', 'serif']
-          },
-          colors: {
-            background: '#ffffff',
-            foreground: '#333333',
-            primary: '#333333',
-            atelier: {
-              50: '#f8f8f8',
-              100: '#f0f0f0',
-              200: '#e4e4e4',
-              300: '#d1d1d1',
-              400: '#b4b4b4',
-              500: '#9a9a9a',
-              600: '#818181',
-              700: '#6a6a6a',
-              800: '#5a5a5a',
-              900: '#4a4a4a',
-              950: '#333333',
-            }
-          }
-        }
-      }
-    }
-  </script>
   <link rel="stylesheet" href="./main.css">
 </head>
 
@@ -98,46 +70,131 @@
   <main>
     <!-- Hero Section -->
     <section class="pt-32 pb-16 pr-16 pl-16 md:pt-40 md:pb-32 md:pr-24 md:pl-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-5">
-          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-            <div class="animate-fade-up" data-speed="0.2">
-              <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight mb-6">
-                <span class="text-primary-red-900">Design</span> e <span class="text-primary-red-900">Criação</span>
-                de<br />
-                <span class="relative inline-block">
-                  Moda Personalizada
-                  <span class="absolute bottom-0 left-0 w-full h-1"
-                    style="background-color: var(--color-venetian-red-900);"></span>
-                </span>
-              </h1>
-              <p class="text-lg md:text-xl text-gray-800 mb-8 max-w-md">
-                Reparos, ajustes e confecção de roupas sob medida para destacar sua personalidade e estilo único.
-              </p>
-              <div class="flex flex-wrap gap-4">
-                <a href="#contact" class="button-primary px-6 py-2.5 rounded-md transition-colors">
-                  Agendar Consulta
-                </a>
-                <a href="#services" class="button-outline px-6 py-2.5 rounded-md transition-colors">
-                  Nossos Serviços
-                </a>
-              </div>
-            </div>
-            <div class="relative shadow-lg rounded-lg overflow-hidden animate-fade-in p-2" style="border-radius: 100%"
-              data-speed="0.1">
-              <img src="./assets/selo-vinho.png" alt="Alê Ateliê - Estúdio de moda e costura"
-                class="w-full h-full object-cover object-center dashed-logo p-3" />
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-5">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          <div class="animate-fade-up" data-speed="0.2">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif font-medium leading-tight mb-6">
+              <span class="text-primary-red-900">Design</span> e <span class="text-primary-red-900">Criação</span>
+              de<br />
+              <span class="relative inline-block">
+                Moda Personalizada
+                <span class="absolute bottom-0 left-0 w-full h-1"
+                  style="background-color: var(--color-venetian-red-900);"></span>
+              </span>
+            </h1>
+            <p class="text-lg md:text-xl text-primary-black mb-8 max-w-md">
+              Reparos, ajustes e confecção de roupas sob medida para destacar sua personalidade e estilo único.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#contact" class="button-primary px-6 py-2.5 rounded-md transition-colors">
+                Agendar Consulta
+              </a>
+              <a href="#services" class="button-outline px-6 py-2.5 rounded-md transition-colors">
+                Nossos Serviços
+              </a>
             </div>
           </div>
+          <div class="relative shadow-lg rounded-lg overflow-hidden animate-fade-in p-2" style="border-radius: 100%"
+            data-speed="0.1">
+            <img src="./assets/selo-vinho.png" alt="Alê Ateliê - Estúdio de moda e costura"
+              class="w-full h-full object-cover object-center dashed-logo p-3" />
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Services Section -->
-      <section id="services" class="py-16 md:py-24 services-section background-primary-red-200">
-        <div class="max-w-7xl mx-auto p-5 background-primary-red-50">
-          <div class="solid-border-wrapper p-4">
+    <!-- Numbers Section -->
+    <section id="numbers" class="py-16 md:py-24 background-primary-red-50">
+      <div>
+        <div class="max-w-7xl mx-auto p-5 ">
+
           <div class="text-center max-w-2xl mx-auto mb-16" data-speed="0.15">
-            <h2 class="text-3xl md:text-4xl text-primary-red-900 font-serif mb-4">Nossos Serviços</h2>
-            <p class="text-gray-800">
+            <h2 class="text-4xl md:text-5xl font-semibold text-primary-black mb-4">Nosso Trabalho</h2>
+            <p class="text-primary-black text-xl">
+              Conheça mais sobre os nossos projetos, parcerias e como trabalhamos.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up">
+              <div class="p-4">
+                <div class="text-center">
+                  <h3 class="text-4xl font-semibold text-primary-black mb-2">+100</h3>
+                  <p class="text-primary-black text-lg">Peças concertadas</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up">
+              <div class="p-4">
+                <div class="text-center">
+                  <h3 class="text-4xl font-semibold text-primary-black mb-2">+20</h3>
+                  <p class="text-primary-black text-lg">Clientes satisfeitos</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up">
+              <div class="p-4">
+                <div class="text-center">
+                  <h3 class="text-4xl font-semibold text-primary-black mb-2">+2</h3>
+                  <p class="text-primary-black text-lg">Parcerias com empresas</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up">
+              <div class="p-4">
+                <div class="text-center">
+                  <h3 class="text-4xl font-semibold text-primary-black mb-2">+5</h3>
+                  <p class="text-primary-black text-lg">Anos no mercado</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="numbers" class="py-16 md:py-8 backgound-primary-wheat-50">
+      <div class="text-center max-w-2xl mx-auto" data-speed="0.15">
+        <p class="text-primary-black font-semibold text-4xl mb-4">Conheça nossos parceiros</p>
+      </div>
+      <div style="border-width: 1px 0px; border-color: var(--color-primary); border-style: solid">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+
+          <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up content-center"
+            style="border-width: 0px 1px; border-color: var(--color-primary); border-style: solid">
+            <div class="p-4">
+              <div class="text-center">
+                <h3 class="text-3xl text-primary-black mb-2">Benassi Odontologia</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="p-4 justify-self-center transition-all duration-300 animate-fade-up content-center"
+            style="border-width: 0px 1px; border-color: var(--color-primary); border-style: solid">
+            <div class="p-4">
+              <div class="text-center">
+                <h3 class="text-3xl text-primary-black mb-2">Clínica Resolut</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 services-section">
+      <div class="max-w-7xl mx-auto p-5 background-primary-red-50">
+        <div class="solid-border-wrapper p-4">
+          <div class="text-center max-w-2xl mx-auto mb-16" data-speed="0.15">
+            <h2 class="text-4xl md:text-5xl font-semibold text-primary-black mb-4">Nossos Serviços</h2>
+            <p class="text-primary-black text-xl">
               Oferecemos soluções completas em moda, desde pequenos ajustes até confecção personalizada.
             </p>
           </div>
@@ -146,11 +203,11 @@
             <div
               class="bg-white p-4 justify-self-center shadow-md hover:shadow-lg transition-all duration-300 animate-fade-up">
               <div class="dashed-border-wrapper p-4">
-                <div class="w-16 h-16 bg-gray-100 flex items-center justify-center justify-self-center rounded-full mb-6">
+                <div
+                  class="w-16 h-16 bg-gray-100 flex items-center justify-center justify-self-center rounded-full mb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-scissors text-primary-red-900"
-                    >
+                    class="lucide lucide-scissors text-primary-red-900">
                     <circle cx="6" cy="6" r="3"></circle>
                     <path d="M8.12 8.12 12 12"></path>
                     <path d="M20 4 8.12 15.88"></path>
@@ -158,22 +215,20 @@
                     <path d="M14.8 14.8 20 20"></path>
                   </svg>
                 </div>
-                <h3 class="text-xl text-primary-red-900 justify-self-center font-serif mb-3">Reparos</h3>
-                <p class="text-gray-800">
+                <h3 class="text-xl text-primary-black justify-self-center font-bold font-serif mb-3">Reparos</h3>
+                <p class="text-primary-black text-lg">
                   Consertos profissionais em peças de roupas, tecidos e acessórios.
                 </p>
               </div>
             </div>
 
-            <div
-              class="bg-white p-4 shadow-md hover:shadow-lg transition-all duration-300 animate-fade-up delay-100">
+            <div class="bg-white p-4 shadow-md hover:shadow-lg transition-all duration-300 animate-fade-up delay-100">
               <div class="dashed-border-wrapper p-4">
-                <div class="w-16 h-16 bg-gray-100 justify-self-center flex items-center justify-center rounded-full mb-6">
+                <div
+                  class="w-16 h-16 bg-gray-100 justify-self-center flex items-center justify-center rounded-full mb-6">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                    class="lucide lucide-ruler text-primary-red-900" data-lov-id="src/components/Services.tsx:12:10"
-                    data-lov-name="Ruler" data-component-path="src/components/Services.tsx" data-component-line="12"
-                    data-component-file="Services.tsx" data-component-name="Ruler" data-component-content="%7B%7D">
+                    class="lucide lucide-ruler text-primary-red-900">
                     <path
                       d="M21.3 15.3a2.4 2.4 0 0 1 0 3.4l-2.6 2.6a2.4 2.4 0 0 1-3.4 0L2.7 8.7a2.41 2.41 0 0 1 0-3.4l2.6-2.6a2.41 2.41 0 0 1 3.4 0Z">
                     </path>
@@ -183,15 +238,14 @@
                     <path d="m17.5 15.5 2-2"></path>
                   </svg>
                 </div>
-                <h3 class="text-xl text-primary-red-900 font-serif mb-3 justify-self-center">Ajustes</h3>
-                <p class="text-gray-800">
-                Adaptação perfeita de peças prontas para seu corpo.
+                <h3 class="text-xl text-primary-black font-serif font-bold mb-3 justify-self-center">Ajustes</h3>
+                <p class="text-primary-black text-lg">
+                  Adaptação perfeita de peças prontas para seu corpo.
                 </p>
               </div>
             </div>
 
-            <div
-              class="bg-white p-4 shadow-md hover:shadow-lg transition-all duration-300 animate-fade-up delay-200">
+            <div class="bg-white p-4 shadow-md hover:shadow-lg transition-all duration-300 animate-fade-up delay-200">
               <div class="dashed-border-wrapper p-4">
                 <div
                   class="w-16 text-primary-red-900 h-16 bg-gray-100 flex items-center justify-self-center justify-center rounded-full mb-6">
@@ -203,9 +257,9 @@
                     <circle cx="11" cy="11" r="2"></circle>
                   </svg>
                 </div>
-                <h3 class="text-xl text-primary-red-900 font-serif mb-3 justify-self-center">Confecção</h3>
-                <p class="text-gray-800">
-                  Criação de peças exclusivas sob medida.
+                <h3 class="text-xl text-primary-black font-serif font-bold mb-3 justify-self-center">Confecção</h3>
+                <p class="text-primary-black text-lg">
+                  Criação de peças exclusivas sob medida. Lorem ipsum dolor sit .
                 </p>
               </div>
             </div>
@@ -218,21 +272,22 @@
                   class="w-12 h-12 rounded-full background-primary-red-900 text-white flex items-center justify-center font-serif text-xl mb-4">
                   1</div>
                 <h4 class="font-thin font-serif text-lg text-primary-red-900 mb-2">Consulta</h4>
-                <p class="text-center text-gray-800">Conversamos sobre suas necessidades e expectativas.</p>
+                <p class="text-center text-primary-black">Conversamos sobre suas necessidades e expectativas.</p>
               </div>
               <div class="flex-1 flex flex-col items-center">
                 <div
                   class="w-12 h-12 rounded-full background-primary-red-900 text-white flex items-center justify-center font-serif text-xl mb-4">
                   2</div>
                 <h4 class="font-thin font-serif text-lg text-primary-red-900 mb-2">Medidas</h4>
-                <p class="text-center text-gray-800">Realizamos as medições precisas para um resultado perfeito.</p>
+                <p class="text-center text-primary-black">Realizamos as medições precisas para um resultado perfeito.
+                </p>
               </div>
               <div class="flex-1 flex flex-col items-center">
                 <div
                   class="w-12 h-12 rounded-full background-primary-red-900 text-white flex items-center justify-center font-serif text-xl mb-4">
                   3</div>
                 <h4 class="font-thin font-serif text-lg text-primary-red-900 mb-2">Execução</h4>
-                <p class="text-center text-gray-800">Produzimos sua peça com técnicas cuidadosas e materiais de
+                <p class="text-center text-primary-black">Produzimos sua peça com técnicas cuidadosas e materiais de
                   qualidade.</p>
               </div>
               <div class="flex-1 flex flex-col items-center">
@@ -240,7 +295,7 @@
                   class="w-12 h-12 rounded-full background-primary-red-900 text-white flex items-center justify-center font-serif text-xl mb-4">
                   4</div>
                 <h4 class="font-thin font-serif text-lg text-primary-red-900 mb-2">Prova</h4>
-                <p class="text-center text-gray-800">Realizamos ajustes finais para garantir perfeição e conforto.
+                <p class="text-center text-primary-black">Realizamos ajustes finais para garantir perfeição e conforto.
                 </p>
               </div>
             </div>
@@ -254,30 +309,72 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 p-5">
         <div class="text-center max-w-2xl mx-auto mb-16" data-speed="0.15">
           <h2 class="text-3xl md:text-4xl text-primary-red-900 font-serif mb-4">Projetos Recentes</h2>
-          <p class="text-gray-800">
+          <p class="text-primary-black">
             Conheça alguns dos trabalhos realizados pela Alê Ateliê.
           </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="group relative overflow-hidden rounded-lg shadow-sm animate-fade-up">
-            <div class="aspect-w-4 aspect-h-3">
-              <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158" alt="Vestido de Festa"
-                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
             </div>
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6 text-white">
-              <span class="text-sm font-medium bg-white/20 rounded-full px-3 py-1 w-fit mb-2">
-                Confecção
-              </span>
-              <h3 class="text-xl font-serif mb-1">Vestido de Festa</h3>
-              <p class="text-sm text-white/90">Confecção completa de vestido para ocasião especial</p>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
             </div>
           </div>
-
-          <!-- More project items... -->
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg"
+                src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+            </div>
+          </div>
         </div>
-      </div>
+
     </section>
 
     <!-- Contact Section -->
@@ -286,7 +383,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           <div>
             <h2 class="text-3xl text-primary-red-900 md:text-4xl font-serif mb-6">Entre em Contato</h2>
-            <p class="text-gray-800 mb-8 max-w-md">Tem uma ideia em mente ou precisa de um serviço personalizado?
+            <p class="text-primary-black mb-8 max-w-md">Tem uma ideia em mente ou precisa de um serviço personalizado?
               Entre em contato para discutirmos seu projeto e agendar uma consulta.</p>
             <div class="space-y-6">
               <div class="flex items-start">
@@ -301,8 +398,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-medium text-gray-800 mb-1">Whatsapp</h3>
-                  <p class="text-gray-800">(55) 99108-5569</p>
+                  <h3 class="font-medium text-primary-black mb-1">Whatsapp</h3>
+                  <p class="text-primary-black">(55) 99108-5569</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -316,8 +413,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-medium text-gray-800 mb-1">E-mail</h3>
-                  <p class="text-gray-800">ateliedecosturaalemartins@gmail.com</p>
+                  <h3 class="font-medium text-primary-black mb-1">E-mail</h3>
+                  <p class="text-primary-black">ateliedecosturaalemartins@gmail.com</p>
                 </div>
               </div>
               <div class="flex items-start">
@@ -332,8 +429,8 @@
                   </svg>
                 </div>
                 <div>
-                  <h3 class="font-medium text-gray-800 mb-1">Instagram</h3>
-                  <p class="text-gray-800">@_ale_atelie_</p>
+                  <h3 class="font-medium text-primary-black mb-1">Instagram</h3>
+                  <p class="text-primary-black">@_ale_atelie_</p>
                 </div>
               </div>
             </div>
