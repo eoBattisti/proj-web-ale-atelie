@@ -65,7 +65,10 @@ footer {
 
 .text-primary-black-alpha {
   color: #282829aa;
+}
 
+.text-primary-black-alpha:hover {
+  color: var(--color-venetian-red-900);
 }
 
 .custom-text-primary:hover {
