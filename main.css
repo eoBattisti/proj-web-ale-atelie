@@ -193,6 +193,14 @@ footer {
   background-size: cover;
 }
 
+.hero-section {
+  background: url("./assets/hero-3.png") top center no-repeat;
+  background-size: contain;
+  background-clip: border-box;
+
+}
+
+
 .swiper-wrapper {
   width: 100%;
   height: max-content !important;
@@ -216,7 +224,7 @@ footer {
 @keyframes fade-up {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(100px);
   }
 
   to {
@@ -235,12 +243,26 @@ footer {
   }
 }
 
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
 .animate-fade-up {
-  animation: fade-up 0.6s ease-out forwards;
+  animation: fade-up 1s ease-out forwards;
 }
 
 .animate-fade-in {
-  animation: fade-in 0.8s ease-out forwards;
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-out {
+  animation: fade-out 1s ease-out forwards;
 }
 
 .delay-100 {

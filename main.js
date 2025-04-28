@@ -1,3 +1,23 @@
+const observerOptions = {
+  root: null,
+  rootMargin: '0px',
+  threshold: 0.1
+};
+
+/**
+  * @param {IntersectionObserver} observer 
+*/
+function observerCallback(entries, observer) {
+  console.log(typeof(entries))
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.replace('animate-fade-out', 'animate-fade-up');
+    } else {
+      entry.target.classList.replace('animate-fade-up', 'animate-fade-out');
+    }
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const menuButton = document.getElementById('menuButton');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -24,53 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
 
-// Parallax effect
-document.addEventListener('DOMContentLoaded', () => {
-  const parallaxElements = document.querySelectorAll('.parallax');
+  const observer = new IntersectionObserver(observerCallback, observerOptions);
 
-  const handleParallax = () => {
-    parallaxElements.forEach(element => {
-      const speed = element.dataset.speed || 0.5;
-      const rect = element.getBoundingClientRect();
-      const scrolled = window.pageYOffset;
-
-      const limit = rect.top + rect.height;
-
-      if (rect.top <= window.innerHeight && limit >= 0) {
-        const yOffset = (scrolled * speed) * -1;
-        element.style.transform = `translate3d(0, ${yOffset}px, 0)`;
-      }
-    });
-  };
-
-  window.addEventListener('scroll', handleParallax);
-  handleParallax(); // Initial position
-
-  var swiper = new Swiper(".centered-slide-carousel", {
-    centeredSlides: true,
-    paginationClickable: true,
-    loop: true,
-    spaceBetween: 30,
-    slideToClickedSlide: true,
-    pagination: {
-      el: ".centered-slide-carousel .swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-      1920: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      },
-      1028: {
-        slidesPerView: 2,
-        spaceBetween: 10
-      },
-      990: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      }
-    }
-  });
+  const fadeElements = document.querySelectorAll('.animate-fade-up', '.animate-fade-in');
+  console.log(fadeElements)
+  fadeElements.forEach(element => observer.observe(element));
 });
