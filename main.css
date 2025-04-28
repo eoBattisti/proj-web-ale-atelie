@@ -63,6 +63,11 @@ footer {
   color: var(--color-primary);
 }
 
+.text-primary-black-alpha {
+  color: #282829aa;
+
+}
+
 .custom-text-primary:hover {
   color: var(--color-venetian-red-900);
 }
@@ -194,8 +199,8 @@ footer {
 }
 
 .hero-section {
-  background: url("./assets/hero-3.png") top center no-repeat;
-  background-size: contain;
+  background: url("./assets/hero-2.png") top center no-repeat;
+  background-size: cover;
   background-clip: border-box;
 
 }
